@@ -1,0 +1,46 @@
+Question:
+In big O notation, what is the expected efficiency?  Why is counting sort impractical as a general sorting algorithm?
+
+Answer:
+For the counting sort our expected Big O is O(max(Range,N)) since we iterate through the count array and range array linealy. Meaning the time complexity depends on range so this will varry too much in comparison to other sorting algorithms.
+
+
+OUTPUT FOR MAIN.CPP
+
+/***************************************************
+                    SAMPLE OUTPUT:
+  *****************START OF ANALYSIS FOR BUBBLE SORT*****************
+
+  Sort Algorithm      |       Array Length        | Array Accesses Pass 1     | Array Accesses Pass 2     | Array Accesses Pass 3     | Average Array Accessess
+  Bubble Sort         |               8           |           78              |               156         |           234             |           156
+  Bubble Sort         |               32          |           1306            |               2612        |           3918            |           2612
+  Bubble Sort         |               128         |           25416           |               50832       |           76248           |           50832
+
+  Time Complexity: O(n^2)
+
+  *****************END OF ANALYSIS FOR BUBBLE SORT*****************
+
+
+  *****************START OF ANALYSIS FOR MERGE SORT*****************
+
+  Sort Algorithm      |       Array Length        | Array Accesses Pass 1     | Array Accesses Pass 2     | Array Accesses Pass 3     | Average Array Accessess
+  Merge Sort          |               8           |           24              |               48          |           72              |           48
+  Merge Sort          |               32          |           232             |               392         |           552             |           392
+  Merge Sort          |               128         |           1448            |               2344        |           3240            |           2344
+
+  Time Complexity: O(nlog(n))
+
+  *****************END OF ANALYSIS FOR MERGE SORT*****************
+
+
+  *****************START OF ANALYSIS FOR COUNTING SORT*****************
+
+  Sort Algorithm      |       Array Length        | Array Accesses Pass 1     | Array Accesses Pass 2     | Array Accesses Pass 3     | Average Array Accessess
+  Count Sort          |               8           |           133         |               266     |           399         |           266
+  Count Sort          |               32          |           229         |               458     |           687         |           458
+  Count Sort          |               128         |           613         |           1226        |       1839            |           1226
+
+  Time Complexity: O(max(Range,N))
+  *****************END OF ANALYSIS FOR COUNTING SORT*****************
+
+***************************************************/
